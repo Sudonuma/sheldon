@@ -1,0 +1,13 @@
+name: components
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - mlflow=1.20.2
+  - pyyaml=5.3.1
+  - hydra-core=1.0.6
+  - pip=20.3.3
+  - pip:
+      - wandb
+      - dvc
+      - dvc[gdrive]

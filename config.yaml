@@ -1,0 +1,24 @@
+main:
+  project_name: sheldon
+    # Change the experiment name to production once everything is set up and run one experient for production.
+  experiment_name: development
+  steps: all
+
+# data quality check.
+data_check:
+  piq_threshold: 0.2
+  niq_threshold: 0.2
+  
+modeling:
+  # Fraction of data to use for test (the remaining will be used for train and validation)
+  test_size: 0.2
+  # Fraction of remaining data to use for validation
+  val_size: 0.2
+  # Fix this for reproducibility, change to have new splits
+  random_seed: 42
+  # network hyperparameters
+  network:
+    lr: 0.1
+    # Here -1 means all available cores
+    n_jobs: -1
+    criterion: mae
