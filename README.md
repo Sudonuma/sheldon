@@ -1,5 +1,5 @@
 # sheldon
-Torngat dev repository with wandb, mlflow, hydra and dvc
+Torngats dev repository with wandb, mlflow, hydra and dvc
 
 ## Preliminary steps for development
 ### Clone sheldon repository
