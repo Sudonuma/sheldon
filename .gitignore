@@ -128,3 +128,10 @@ dmypy.json
 # Pyre type checker
 .pyre/
 /data
+
+*.DS_Store
+artifacts/
+wandb/
+mlruns/
+outputs/
+multirun/
