@@ -1,0 +1,37 @@
+{
+    "os": "Linux-5.10.0-1045-oem-x86_64-with-glibc2.28",
+    "python": "3.9.7",
+    "heartbeatAt": "2021-10-06T14:43:11.612780",
+    "startedAt": "2021-10-06T14:43:10.996268",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--data_path",
+        "./data",
+        "--repo",
+        "https://github.com/Sudonuma/sheldon.git",
+        "--data_url",
+        "https://drive.google.com/file/d/1CSRquWi7xNYH9oSsVfZDtep2sCNauLQL/view?usp=sharing",
+        "--version",
+        "971b6cae3f36007ea3df3e0c43c8a139ae6a9dbd",
+        "--artifact_name",
+        "data.dvc",
+        "--artifact_type",
+        "dataset_dvc_file",
+        "--artifact_description",
+        "Dataset metadata and .dvc file: This is an artfact for data information and not the data itself"
+    ],
+    "state": "running",
+    "program": "/home/sheldon/src/download_data/run.py",
+    "codePath": "src/download_data/run.py",
+    "git": {
+        "remote": "https://github.com/Sudonuma/sheldon.git",
+        "commit": "f2a30b42a7459ff683a1baeabb99aee10f61e5de"
+    },
+    "email": "tasnim.hd@gmail.com",
+    "root": "/home/sheldon",
+    "host": "019aa83719a4",
+    "username": "root",
+    "executable": "/opt/conda/envs/mlflow-64f2873aa002b33ac17bec338c083dde0bbd27b7/bin/python"
+}

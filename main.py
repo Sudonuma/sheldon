@@ -43,8 +43,18 @@ def go(config: DictConfig):
                 os.path.join(root_path, "src", "download_data"),
                 "main",
                 parameters={
-                    "artifact_name": "",
-                    "artifact_type": "raw_data",
-                    "artifact_description": "Raw file as downloaded"
+                    "new_dataset_name": "CFD",
+                    "download_new": config['data']['download_new'],
+                    "data_path": "./data",
+                    "repo": config['main']['repository'],
+                    "data_url": config['data']['data_url'],
+                    "version": config['data']['version'],
+                    "artifact_name": "data.dvc",
+                    "artifact_type": "dataset_dvc_file",
+                    "artifact_description": "Dataset metadata and .dvc file: This is an artfact for data information and not the data itself"
                 },
             )
+
+
+if __name__ == "__main__":
+    go()

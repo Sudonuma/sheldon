@@ -1,14 +1,18 @@
 main:
-  project_name: sheldon
+  repository: "https://github.com/Sudonuma/sheldon.git"
+  project_name: sheldon_dev
     # Change the experiment name to production once everything is set up and run one experient for production.
   experiment_name: development
   steps: all
-
+data:
+  data_url: "https://drive.google.com/file/d/1CSRquWi7xNYH9oSsVfZDtep2sCNauLQL/view?usp=sharing"
+  version: "971b6cae3f36007ea3df3e0c43c8a139ae6a9dbd"
+  download_new: "False"
 # data quality check.
 data_check:
   piq_threshold: 0.2
   niq_threshold: 0.2
-  
+
 modeling:
   # Fraction of data to use for test (the remaining will be used for train and validation)
   test_size: 0.2

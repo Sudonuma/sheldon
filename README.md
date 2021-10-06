@@ -107,3 +107,27 @@ providing it as a ``hydra_options`` parameter. Example:
 ```
 
 ### Data version control config: DVC
+
+## Components: 1/ Download_data 2/ second_component 3/ third_component
+### Components: 1/ Download_data 
+
+If you want to pull the latest version of the data, run:
+```bash 
+> mlflow run . -P steps=download_dataset
+```
+If you have a different data you will work on, run:
+```bash 
+> mlflow run . -P steps=download_data -P hydra_options="data.download_new='True'"
+```
+
+This will download your data in the data/raw path.
+if you used your data for training and this data is the next version of the dataset please add it to be tracked and to be pulled by you collegues to do so please follow these steps:
+```bash 
+> dvc add data/
+> git add data/.gitignore data.dvc
+> git commit -m 'New data version ...'
+create a tag:
+> git tag -a 'v[version_number]' -m 'message'
+> dvc push
+```
+

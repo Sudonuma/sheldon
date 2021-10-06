@@ -4,23 +4,42 @@ conda_env: conda.yml
 entry_points:
   main:
     parameters:
+      new_dataset_name:
+        description: Your new dataset name
+        type: string
+
+      download_new:
+        description: Set this to true if you will not pull the dataset and will use a new different one
+        type: string
+
+      data_path:
+        description: path to local data
+        type: string
+
+      repo:
+        description: repository that have your dataset tracked with dvc
+        type: string
 
       data_url:
-        description: ## ADD DESCRIPTION
+        description: Url of the dataset you want to download (different from the dataset pulled with dvc)
+        type: string
+
+      version:
+        description: Version of the data you want to pull
         type: string
 
       artifact_name:
-        description: ## ADD DESCRIPTION
+        description: Name of the artifact (could be dataset name and version)
         type: string
 
       artifact_type:
-        description: ## ADD DESCRIPTION
+        description: type of you rtifact .csv file, .dvc file
         type: string
 
       artifact_description:
-        description: ## ADD DESCRIPTION
+        description: Dataset metadata used during the current project. the dataset s tracked using DVC
         type: string
 
 
     command: >-
-        python run.py  --data_url {data_url}  --artifact_name {artifact_name}  --artifact_type {artifact_type}  --artifact_description {artifact_description} 
+        python run.py --new_dataset_name {new_dataset_name} --download_new {download_new} --data_path {data_path} --repo {repo} --data_url {data_url} --version {version}  --artifact_name {artifact_name}  --artifact_type {artifact_type}  --artifact_description {artifact_description} 

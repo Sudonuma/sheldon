@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sheldon/mlruns/0/72b821c2c2ee410eb7a5156c9bbbb323/artifacts
+end_time: 1633530774669
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 72b821c2c2ee410eb7a5156c9bbbb323
+run_uuid: 72b821c2c2ee410eb7a5156c9bbbb323
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1633530764752
+status: 3
+tags: []
+user_id: root
