@@ -1,0 +1,18 @@
+name: train_model
+conda_env: conda.yml
+
+entry_points:
+  main:
+    parameters:
+
+      output_artifact:
+        description: ## ADD DESCRIPTION
+        type: string
+
+      trainval_artifact:
+        description: ## ADD DESCRIPTION
+        type: string
+
+
+    command: >-
+        python run.py  --output_artifact{output_artifact}  --trainval_artifact {trainval_artifact} 
